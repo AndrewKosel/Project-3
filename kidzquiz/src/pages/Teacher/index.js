@@ -1,8 +1,8 @@
 import { Component } from 'react';
-// import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Wrapper from "../../components/Wrapper";
 import TeacherQuizBank from "../../components/TeacherQuizBank";
+import TeacherQuizCard from "../../components/TeacherQuizCard";
 
 class MakeQuiz extends Component {
 
@@ -11,11 +11,12 @@ class MakeQuiz extends Component {
         return (
 
             <Wrapper>
-                {/* <Header /> */}
                 <MakeQuiz />
-                {/* <TeacherQuizBank /> */}
+                <TeacherQuizBank>
+                    <TeacherQuizCard />
+                </TeacherQuizBank>
                 <Footer />
-            </Wrapper>
+            </ Wrapper>
 
         );
     }
